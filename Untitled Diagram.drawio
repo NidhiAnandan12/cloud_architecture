@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.0.2">
+  <diagram name="Cloud" id="o3vtujgnbc7DfjUM79Tx">
+    <mxGraphModel dx="1900" dy="699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="L3q7a9XIX13u7BELMDtM-1" value="Amazon Glacier" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.glacier;" vertex="1" parent="1">
+          <mxGeometry x="780" y="185" width="80" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="L3q7a9XIX13u7BELMDtM-2" value="Amazon S3" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.s3;" vertex="1" parent="1">
+          <mxGeometry x="560" y="190" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="L3q7a9XIX13u7BELMDtM-3" value="AWS Glue" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.glue;" vertex="1" parent="1">
+          <mxGeometry x="170" y="190" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="L3q7a9XIX13u7BELMDtM-10" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-40" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L3q7a9XIX13u7BELMDtM-4" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="L3q7a9XIX13u7BELMDtM-10">
+          <mxGeometry width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L3q7a9XIX13u7BELMDtM-5" value="PyIceberg" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="L3q7a9XIX13u7BELMDtM-10">
+          <mxGeometry x="30" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L3q7a9XIX13u7BELMDtM-11" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="340" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L3q7a9XIX13u7BELMDtM-12" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="L3q7a9XIX13u7BELMDtM-11">
+          <mxGeometry width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L3q7a9XIX13u7BELMDtM-13" value="Iceberg metadata" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="L3q7a9XIX13u7BELMDtM-11">
+          <mxGeometry x="30" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L3q7a9XIX13u7BELMDtM-18" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="L3q7a9XIX13u7BELMDtM-2" target="L3q7a9XIX13u7BELMDtM-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="250" as="sourcePoint" />
+            <mxPoint x="670" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L3q7a9XIX13u7BELMDtM-19" value="Actual&amp;nbsp;&lt;br&gt;Parquet files" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="310" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L3q7a9XIX13u7BELMDtM-20" value="File Restoration&lt;br&gt;based on lifecycle" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L3q7a9XIX13u7BELMDtM-21" value="catalog that stores table names, schema, and S3 paths" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="310" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L3q7a9XIX13u7BELMDtM-28" value="JSON describing schema, snapshots, and file locations&amp;nbsp; stored in S3" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="300" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="L3q7a9XIX13u7BELMDtM-29" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="L3q7a9XIX13u7BELMDtM-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="83" y="240" as="sourcePoint" />
+            <mxPoint x="130" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L3q7a9XIX13u7BELMDtM-30" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="253" y="239.29" as="sourcePoint" />
+            <mxPoint x="340" y="239.29" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L3q7a9XIX13u7BELMDtM-31" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="466.5" y="244.29000000000002" as="sourcePoint" />
+            <mxPoint x="553.5" y="244.29000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L3q7a9XIX13u7BELMDtM-34" value="Python&amp;nbsp;&lt;br&gt;package" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="300" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L3q7a9XIX13u7BELMDtM-35" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="L3q7a9XIX13u7BELMDtM-34" target="L3q7a9XIX13u7BELMDtM-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
